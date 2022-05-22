@@ -1,6 +1,6 @@
 # Javascript Coding Quiz Challenge
 
-For this challenge, we create an interactive and timed JavaScript quiz that stores a high score leaderboard in local storage. Developed in accordance with the following acceptance criteria:
+For this challenge, we have been assigned to create an interactive and timed JavaScript quiz that stores a high score leaderboard in local storage. The following is the challenge's  acceptance criteria:
 ```
 GIVEN I am taking a code quiz
 WHEN I click the start button
@@ -17,3 +17,4 @@ THEN I can save my initials and my score
 ![Screenshot of Webpage Mockup](./week4screenshot.png)
 
 ## Link to Deployed Application 
+Open the JavaScript Coding Quiz [URL](https://jennyferconstanza.github.io/week4challenge/) in your browser.

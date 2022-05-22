@@ -93,8 +93,13 @@ button.button:hover, button.choice-button:hover {
     background-color:#d15dee ;
 }
 /*media queries*/
+/* for <980px */
 @media screen and (max-width: 980px) {
-  a, time {
+a {
+    flex: 20%;
+    font-size: 1rem;
+}
+time {
     flex: 20%;
 }
 .card {
@@ -102,8 +107,13 @@ button.button:hover, button.choice-button:hover {
     padding: 3rem;
 }
 }
+/*for <768px */
 @media screen and (max-width: 768px) {
-a, time {
+a {
+    flex: 20%;
+    font-size: 1rem;
+}
+time {
     flex: 20%;
 }
 .card {
@@ -111,8 +121,13 @@ a, time {
     padding: 2rem;
 }
 }
+/*for <575px */
 @media screen and (max-width: 575px) {
-a, time {
+a {
+    flex: 20%;
+    font-size: 1rem;
+}
+time {
     flex: 20%;
 }
 .card {

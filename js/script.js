@@ -153,7 +153,7 @@ function updateStoredLeaderboard(leaderboardItem) {
   leaderboardArray.push(leaderboardItem);
   localStorage.setItem("leaderboardArray", JSON.stringify(leaderboardArray));
 }
-//get "leaderboardArray" from local storage and parse it into a javascript object using JSON.parse
+//retrieve leaderboardArray from local storage and parse it into a javascript object using JSON.parse
 function getLeaderboard() {
   var storedLeaderboard = localStorage.getItem("leaderboardArray");
   if (storedLeaderboard !== null) {
