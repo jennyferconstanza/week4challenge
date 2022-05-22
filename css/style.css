@@ -1,0 +1,122 @@
+/*font from google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/*variables*/
+:root {
+    --gray-color:#b6c5db;
+    --purple-color:#ae2dce;
+    --white-color: #fff;
+}
+/*universal selector*/
+*{
+    box-sizing: border-box;
+}
+/*body styling starts*/
+body {
+    background-color: var(--gray-color);
+    font-family:'Poppins', sans-serif;
+    margin: 0;
+}
+/*main styling starts*/
+main {
+    background-color: var(--gray-color);
+    background-image: linear-gradient(315deg, var(--gray-color),var(--white-color), 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+/*header styling starts*/
+header {
+background-color: var(--gray-color);
+display: flex;
+justify-content: space-between;
+color:var(--white-color);
+padding: 3vh;
+}
+/*h2 styling*/
+h2 {
+padding: 1rem;
+text-align: center;
+margin: 0;
+}
+/*timer styling*/
+time {
+    background-color: var(--purple-color);
+    color:var(--white-color);
+    border: none;
+    width: 20%;
+    display: block;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-family: inherit;
+    padding: 1.3rem;
+}
+/*styling for view highscore link starts*/
+a {
+    background-color: var(--purple-color);
+    color: var(--white-color);
+    border: none;
+    width: 20%;
+    display: block;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-family: inherit;
+    padding: 1.3rem;
+}
+a:hover {
+    background-color:#d15dee ;
+}
+/*card containers styling starts */
+.card {
+    background-color:var(--white-color);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+    width: 600px;
+    overflow: hidden;
+    padding: 4rem;
+}
+/*answer choice button options styling*/
+button.button, button.choice-button {
+    background-color:var(--purple-color);
+    color:var(--white-color);
+    border: none;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-family: inherit;
+    padding: 1.3rem;
+}
+button.button:hover, button.choice-button:hover {
+    background-color:#d15dee ;
+}
+/*media queries*/
+@media screen and (max-width: 980px) {
+  a, time {
+    flex: 20%;
+}
+.card {
+    width: 600px;
+    padding: 3rem;
+}
+}
+@media screen and (max-width: 768px) {
+a, time {
+    flex: 20%;
+}
+.card {
+    width: 400px;
+    padding: 2rem;
+}
+}
+@media screen and (max-width: 575px) {
+a, time {
+    flex: 20%;
+}
+.card {
+    width: 300px;
+    padding: 1rem;
+}
+}

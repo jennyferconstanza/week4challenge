@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--linked style.css-->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Javascript Quiz Challenge</title>
+</head>
+<body>
+    <!-- header starts-->
+    <header>
+        <!--link to view leaderboard and highscores-->
+        <a id="leaderboard-link">View Highscores</a> 
+        <!--timer, each question will be timed 10 seconds- total time for quiz is 50 seconds-->
+        <time>Time: <span id="time"></span></time>
+    </header>
+    <!--header ends-->
+    <!--main starts-->
+    <main>
+        <!--start-card container, start of game presents a "starting card" with a short prompt-->
+        <div id="start-card" class="card">
+            <h2 id="title">Coding Quiz Challenge</h2>
+            <p>Answer to following code-related questions within the 75 second time limit. <br>Incorrect answers choices will penalize your overall score and deduct the time limit by ten seconds. Good luck!</p>
+           <!--start button will start the game when clicked on-->
+            <button id="start-button" class="button">Start Quiz</button>
+        </div>
+        <!--question-card container, where questions will be stored and hidden-->
+        <div hidden id="question-card" class="card">
+            <h2 id="question-text"></h2>
+            <div id="quiz-choices">
+                <!--answer choices, button for each answer choice option-->
+                <button id="choice0" class="choice-button"></button>
+                <br>
+                <button id="choice1" class="choice-button"></button>
+                <br>
+                <button id="choice2" class="choice-button"></button>
+                <br>
+                <button id="choice3" class="choice-button"></button>
+            </div>
+            <!--results-card container, results of quiz game-->
+            <div id="result-div">
+                <hr>
+                <p id="result-text"></p>
+            </div>
+        </div>
+        <!--score-card presented to user at end of game-->
+        <div hidden id="score-card" class="card">
+            <h2>All done!</h2>
+            <!--final score is prompted to user-->
+            <p>Your final score is <span id="score"></span>.</p>
+            <!--intials form of user to collect data for highscore leaderboard-->
+            <form class="inline-form" id="submission-form">
+                  <label for="initials">Enter initials: </label>
+                  <input type="text" id="initials">
+                  <!--submit button submits intials and score to be stored in leaderboard-->
+                  <button id="submit-button" class="button">Submit</button>
+            </form>
+        </div>
+        <!--highscore leaderboard hidden card-->
+        <div hidden id="leaderboard-card" class="card">
+            <h2> Leaderboard Highscores</h2>
+            <ol id="highscore-list">
+            </ol>
+            <div class="inline-buttons">
+                <button id="back-button" class="button">Go Back</button>
+                <br>
+                <button id="clear-button" class="button">Clear Highscores</button>
+            </div>
+        </div>
+    </main>
+    <!--main ends-->
+</body>
+<!--linked script.js and questions.js-->
+<script src="./js/questions.js"></script>
+<script src="./js/script.js"></script>
+</html>
