@@ -17,3 +17,4 @@ THEN I can save my initials and my score
 ![Screenshot of Webpage Mockup](./week4screenshot.png)
 
 ## Link to Deployed Application 
+Open the JavaScript Coding Quiz [URL](https://jennyferconstanza.github.io/week4challenge/) in your browser.
